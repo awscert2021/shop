@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/api/api.iml" filepath="$PROJECT_DIR$/api/api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProductCompositeService/product-composite-service.iml" filepath="$PROJECT_DIR$/ProductCompositeService/product-composite-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProductService/product-service.iml" filepath="$PROJECT_DIR$/ProductService/product-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecommendationService/recommendation-service.iml" filepath="$PROJECT_DIR$/RecommendationService/recommendation-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ReviewService/review-service.iml" filepath="$PROJECT_DIR$/ReviewService/review-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop.iml" filepath="$PROJECT_DIR$/shop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/util/util.iml" filepath="$PROJECT_DIR$/util/util.iml" />
+    </modules>
+  </component>
+</project>

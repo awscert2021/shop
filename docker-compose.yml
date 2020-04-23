@@ -1,0 +1,37 @@
+version: '2.1'
+services:
+  product:
+    depends_on:
+    - mongodb
+    build: ProductService
+    mem_limit: 350m
+    environment:
+    - SPRING_PROFILES_ACTIVE=docker
+  recommendation:
+    depends_on:
+    - mongodb
+    build: RecommendationService
+    mem_limit: 350m
+    environment:
+    - SPRING_PROFILES_ACTIVE=docker
+  review:
+    depends_on:
+      - mongodb
+    build: ReviewService
+    mem_limit: 350m
+    environment:
+    - SPRING_PROFILES_ACTIVE=docker
+  product-composite:
+    build: ProductCompositeService
+    mem_limit: 350m
+    ports:
+    - 8080:8080
+    environment:
+    - SPRING_PROFILES_ACTIVE=docker
+  # $ mongo
+  mongodb:
+    image: mongo:4.2.5
+    mem_limit: 350m
+    ports:
+      - "27017:27017"
+    command: mongod
